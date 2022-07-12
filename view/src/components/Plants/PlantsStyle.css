@@ -1,0 +1,136 @@
+.product-Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/banner1.jpg'); 
+  opacity: 0,75;
+}
+@media screen and (min-width:430px) {
+  .banner{
+      height: 150px;
+  } 
+}
+.banner > p {
+ color: white;
+ font-weight: bold;
+ font-size: 1.7rem;
+ position: relative;
+}
+
+.box-body{
+  background: #fff;
+}
+@media screen and (min-width:700px) {
+  .box-body{
+      margin: 0 auto;
+      padding: 20px 0;
+      width: 640px;
+      text-align: center;
+  } 
+
+}
+.box-body > h1{
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+}
+.main-list{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item-list{
+    width: 100%;
+    height: 300px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+.item-list > .item-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.item-list > .item-headline > .item-type {
+    color: green;
+    font-size: 2rem;
+    
+}
+.item-list > .item-headline > .item-type::first-letter{
+    text-transform: uppercase;
+    
+}
+.item-list > .item-headline > .item-title {
+    font-size: 2rem;
+}
+
+.item-list > .item-headline > .item-price {
+    font-size: 2rem;
+}
+@media screen and (min-width:430px) {
+  .img-box{
+   text-align: center;
+  } 
+
+}
+.item-img{
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+
+}
+@media screen and (min-width:430px) {
+  .item-img{
+    width: 50%;
+  } 
+
+}
+
+.popup-cart-btns{
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  
+}
+
+.counter{
+  height: 5%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  text-align: center;
+  
+}
+
+.counter >.btn-icon > svg{
+  color: rgb(15, 143, 76);
+}
+  

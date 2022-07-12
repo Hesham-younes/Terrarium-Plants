@@ -1,0 +1,127 @@
+body{
+    font-family: sans-serif;
+    background: #F5F7F6;
+}
+.plantsDetails-container{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+@media screen and (min-width:700px) {
+    .plantsDetails-container{
+        margin: 0 auto;
+        width: 640px;
+    } 
+}
+.head-box{
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.head-box >.backBtn{
+    width: 26px;
+    height: 26px;
+    margin: 0 20% 0 0;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(166, 171, 168, 0.219);
+    cursor: pointer;
+}
+
+.plantsDetails-container > .name {
+    font-size: 2.7rem;
+}
+
+.plantsDetails-container > img {
+    object-fit: contain;
+    width: 250px;
+    height: 250px;
+}
+
+.plantsDetails-container > .price{
+    width: 100%;
+    padding: 0 15px;
+    font-size: 20px;
+    color: green;
+}
+.headline{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
+.plantsDetails-container > .btnDetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.plantsDetails-container > .btnDetails > .addToCart{
+    width: 200px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size:1.7rem ;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+.plantsDetails-container > .btnDetails > .addToCart:hover{
+    background: rgb(24, 60, 24);
+}
+
+.plantsDetails-container > .btnDetails > .addToFav{
+    height: 40px;
+    width: 10%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size:1.7rem ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.plantsDetails-container > .btnDetails > .addToFav:hover{
+    background: #ccc;
+}
+.plantsDetails-container > .description  {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.plantsDetails-container > .care  {
+    width: 100%;
+    font-size: 20px;  
+    padding: 15px; 
+    padding-bottom: 100px;
+}
+.care-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.care-1 {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.care-1 > .care-info{
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.red {
+    background-color: red;
+}

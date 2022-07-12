@@ -1,0 +1,118 @@
+section{
+  height: 10vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.navigation{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.222);
+  background-color: rgb(255, 255, 255);
+  z-index: 9999;
+  
+  
+}
+
+.navigation ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 25%;
+  padding: 0 5px;
+  list-style: none;
+  /* position: relative; */
+  z-index: 1;
+}
+.navigation > ul > li > a{
+  width:30% ;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.active{
+  color: #000;
+
+}
+.logOut{
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+.navigation ul li a .icon ,.logOut{
+  /* position: relative; */
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+  color: rgba(104, 100, 100, 0.543);
+}
+.navigation ul li:hover a .icon {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.navigation ul li a .camera {
+ position: absolute;
+ top: -1px;
+ color: rgba(104, 100, 100, 0.543);
+}
+
+
+
+.navigation ul li a .text {
+  position: absolute;
+  color: rgb(10, 141, 67);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.5s;
+  opacity: 0;
+  height: 10vh;
+  
+}
+
+.navigation ul li:hover a .text {
+  opacity: 1;
+  transform: translateY(30px);
+}
+
+.qtyNum {
+  position: absolute;
+  top: -1px;
+  padding: .5rem;
+  z-index: 999;
+  color: green;
+  border-radius: 50%;
+  right: 1px;
+  font-weight: bold;
+}
+
+
+ @media screen and (max-width: 1024px) {
+  .qtyNum{
+   right: 0px;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  .qtyNum{
+   right: -17px;
+  }
+} 
